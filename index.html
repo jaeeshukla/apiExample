@@ -1,0 +1,241 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>AJAX/PHP/CURL/JSON example</title>
+		<meta name="description" content="AJAX/PHP/CURL/JSON example">
+		<meta name="author" content="Jaee Shukla">
+
+	</head>
+
+	<body>
+		<table border=1 style="width:50%">
+		<tr>
+		<th>Name </th>
+		<th> Description </th>
+		<th>Submit</th>
+		</tr>
+		<tr>
+		<td rowspan="2"> Ocean API </td>
+		<td> Select the Latitude and Longitude</td>
+		<td rowspan="2">	<button id="btnRun">Run</button>
+		</td>
+		
+		</tr>
+		<tr>
+	<td>
+	<label for="selLat"> Latitude </label>
+		<select id="selLat">
+			<option value="40.78343">40.78343</option>
+			<option value="55.75">55.75</option>
+			<option value="0.00">0.00</option>
+			
+		</select>
+<label for="selLong"> Longitude </label>
+		<select id="selLong">
+			<option value="-43.96625">-43.96625</option>
+			<option value="55.75">55.75</option>
+			<option value="0.00">0.00</option>
+		</select>
+	</td>
+	</tr>
+	
+	
+	<!-- near by place -->
+	<tr>
+		<td rowspan="2"> Near by place Info </td>
+		<td> Select the Latitude and Longitude</td>
+		<td rowspan="2">	<button id="btnRunPlace">Run</button>
+		</td>
+		
+		</tr>
+		<tr>
+	<td>
+	<label for="selLatPlace"> Latitude </label>
+		<select id="selLatPlace">
+			<option value="47.3">47.3</option>
+			<option value="55.75">55.75</option>
+			<option value="0.00">0.00</option>
+			
+		</select>
+		<label for="selLongPlace"> Longitude </label>
+		<select id="selLongPlace">
+			<option value="9">9</option>
+			<option value="55.75">55.75</option>
+			<option value="0.00">0.00</option>
+		</select>
+	</td>
+	</tr>
+	<!-- near by place end -->
+	
+	
+	
+	<!-- time zone start -->
+	
+		<tr>
+		<td rowspan="2"> Time zone details </td>
+		<td> Select the Latitude and Longitude</td>
+		<td rowspan="2">	<button id="btnRunTime">Run</button>
+		</td>
+		
+		</tr>
+		<tr>
+	<td>
+	<label for="selLatTime"> Latitude </label>
+		<select id="selLatTime">
+			<option value="47.01">47.01</option>
+			<option value="55.75">55.75</option>
+			<option value="0.00">0.00</option>
+			
+		</select>
+		<label for="selLongTime"> Longitude </label>
+		<select id="selLongTime">
+			<option value="10.2">10.2</option>
+			<option value="55.75">55.75</option>
+			<option value="0.00">0.00</option>
+		</select>
+	</td>
+	</tr>
+	<!-- time zobe end -->
+	</table>
+	
+
+		<br><br>
+
+
+
+		<div id="divOcean">
+		
+			<table>
+	<tr>
+					<td align="right">
+						<label id="lblname">Ocean Name: </label>
+					</td>
+					<td id="txtname">
+						
+					</td>
+
+				</tr>
+				<tr>
+					<td align="right">
+						Distance: 
+					</td>
+					<td id="txtdist">
+						
+					</td>
+
+				</tr>
+
+<tr>
+					<td align="right">
+						 <label id="lblid">ID: </label>
+					</td>
+					<td id="txtid">
+						
+					</td>
+
+				</tr>
+			
+			</table>
+
+		</div>
+		<br><br>
+		
+		<div id="divPlace">
+		<table>
+
+
+<tr>
+					<td align="right">
+						 <label id="lblid"> Place Name: </label>
+					</td>
+					<td id="txtplacename">
+						
+					</td>
+
+				</tr>
+				<tr>
+					<td align="right">
+						Country name: 
+					</td>
+					<td id="txtcountryname">
+						
+					</td>
+
+				</tr>
+
+				<tr>
+					<td align="right">
+						<label id="lblname">Latitude: </label>
+					</td>
+					<td id="txtlatitude">
+						
+					</td>
+
+				</tr>
+				<tr>
+					<td align="right">
+						<label id="lblname">Longitude: </label>
+					</td>
+					<td id="txtlongitude">
+						
+					</td>
+
+				</tr>
+			</table>
+		
+		</div>
+		<br><br>
+		<div id="divtimezone">
+		
+				<table>
+
+
+<tr>
+					<td align="right">
+						 <label id="lblid"> Country Code: </label>
+					</td>
+					<td id="txtcode">
+						
+					</td>
+
+				</tr>
+				
+				<tr>
+					<td align="right">
+						 <label id="lblid"> Country Name: </label>
+					</td>
+					<td id="txtconame">
+						
+					</td>
+
+				</tr>
+				<tr>
+					<td align="right">
+						 <label id="lblid"> Time Zone Id:
+					<td id="txtzoneid">
+						
+					</td>
+
+				</tr>
+					<tr>
+					<td align="right">
+						 <label id="lblid"> Time :
+					<td id="txttime">
+						
+					</td>
+
+				</tr>
+			</table>
+		</div>
+		
+		<script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+		<script type="application/javascript" src="libs/js/script.js"></script>
+
+	</body>
+
+</html>
